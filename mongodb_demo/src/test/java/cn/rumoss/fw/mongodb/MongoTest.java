@@ -31,7 +31,7 @@ public class MongoTest {
         // 构建查询条件
         BasicDBObject bson = new BasicDBObject("userid","1");
         // 查询浏览量大于902的
-        bson = new BasicDBObject("visits",new BasicBSONObject("$gt",902));
+        bson = new BasicDBObject("visits",new BasicBSONObject("$gt",665));
         documents = spit.find(bson);// 条件查询
 
         // 遍历打印
