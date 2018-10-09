@@ -1,0 +1,9 @@
+# 配置tomcat端口号
+server:
+  port: 9004
+# 配置注册中心中当前应用名称，名称不要有下划线_
+spring:
+  application:
+    name: rabbitmq-demo
+  rabbitmq:
+    host: 192.168.195.135
