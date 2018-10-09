@@ -19,4 +19,24 @@ public class MqTest {
         rabbitTemplate.convertAndSend("itcast","发个消息试试~");
     }
 
+    @Test
+    public void testSendFanoutMessage(){
+        rabbitTemplate.convertAndSend("chuanzhi","","发个分列模式的消息试试~");
+    }
+
+    @Test
+    public void testSendTopic1(){
+        rabbitTemplate.convertAndSend("topictest","goods.aaa","主题模式：goods.aaa~");
+    }
+
+    @Test
+    public void testSendTopic2(){
+        rabbitTemplate.convertAndSend("topictest","article.content.log","主题模式：article.content.log~");
+    }
+
+    @Test
+    public void testSendTopic3(){
+        rabbitTemplate.convertAndSend("topictest","goods.log","主题模式：goods.log~");
+    }
+
 }

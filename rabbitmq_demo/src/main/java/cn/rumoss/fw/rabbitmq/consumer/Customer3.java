@@ -5,12 +5,12 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RabbitListener(queues = "itcast")
-public class Customer1 {
+@RabbitListener(queues = "kudingyu")
+public class Customer3 {
 
     @RabbitHandler
     public void showMessage(String message) {
-        System.out.println("itcast-消费者收到的消息： " + message);
+        System.out.println("分列模式-kudingyu-消费者收到的消息： " + message);
     }
 
 }
