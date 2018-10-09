@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mongodb_demo" />
         <module name="rabbitmq_demo" />
+        <module name="redis_demo" />
       </profile>
     </annotationProcessing>
   </component>
