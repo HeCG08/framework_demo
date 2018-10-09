@@ -12,6 +12,7 @@
 
     <modules>
         <module>rabbitmq_demo</module>
+        <module>mongodb_demo</module>
     </modules>
     <packaging>pom</packaging>
 
